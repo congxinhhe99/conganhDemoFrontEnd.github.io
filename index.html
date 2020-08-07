@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedStore | Ecommerce Website Design</title>
     <link rel="stylesheet" href="css/style.css">
-    <link  rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                  <a href="index.html"> <img src="images/logo.png" width="125px" alt=""></a>
+                    <a href="index.html"> <img src="images/logo.png" width="125px" alt=""></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -27,7 +28,7 @@
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-               <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
+                <a href="cart.html"><img src="images/cart.png" class="cart" width="30px" height="30px" alt=""></a>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
@@ -69,7 +70,7 @@
     <!--featured products-->
     <div class="small-container">
         <h2 class="title">Featured Products </h2>
-        <div class="row">
+        <div class="row slide">
             <div class="col-4">
                 <img src="images/product-1.jpg" alt="">
                 <h4>Red Printed T-shirt</h4>
@@ -103,6 +104,54 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
                 </div>
                 <p>$50.00</p>
             </div>
@@ -297,7 +346,7 @@
     <!-- brands -->
     <div class="brands">
         <div class="small-container">
-            <div class="row">
+            <div class="row sliderBands">
                 <div class="col-5">
                     <img src="images/logo-godrej.png" alt="">
                 </div>
@@ -352,11 +401,15 @@
                 </div>
             </div>
             <hr>
-            <p class="coppyright">Copyright 2020 - design by <a href="https://www.facebook.com/iamwall13" target="_blank">Van Cong</a></p>
+            <p class="coppyright">Copyright 2020 - design by <a href="https://www.facebook.com/iamwall13"
+                    target="_blank">Van Cong</a></p>
         </div>
     </div>
 
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.js"></script>
 </body>
 
 </html>
