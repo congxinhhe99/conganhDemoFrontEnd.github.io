@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accout - redStore</title>
+    <title>Account - redStore</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link  rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="images/logo.png" width="125px" alt="">
+                <a href="index.html"> <img src="images/logo.png" width="125px" alt=""></a>
             </div>
             <nav>
                 <ul id="MenuItems">
@@ -42,22 +42,22 @@
                   <div class="col-2">
                       <div class="form-container">
                           <div class="form-btn">
-                              <span onclick="login()">Login</span>
-                              <span onclick="register()">Register</span>
+                              <span onclick="btnlogin()">Login</span>
+                              <span onclick="btnregister()">Register</span>
                               <hr id="Indicator">
                           </div>
-                          <form action="" id="LoginForm">
-                              <input type="text" placeholder="Username" name="" id="">
-                              <input type="password" placeholder="Password" name="" id="">
-                              <button type="submit" class="btn">Login</button>
+                          <form action="" id="LoginForm" name="login">
+                              <input type="text" placeholder="Username" name="username" id="">
+                              <input type="password" placeholder="Password" name="password" id="">
+                              <button type="submit" class="btn" >Login</button>
                               <a href="">Forgot password</a>
                           </form>
 
-                          <form action="" id="RegForm">
-                            <input type="text" placeholder="Username" name="" id="">
-                            <input type="email" placeholder="Email" name="" id="">
-                            <input type="password" placeholder="Password" name="" id="">
-                            <button type="submit" class="btn">Register</button>
+                          <form action="" id="RegForm" name="register">
+                            <input type="text" placeholder="Username" name="username" id="">
+                            <input type="email" placeholder="Email" name="email" id="">
+                            <input type="password" placeholder="Password" name="password" id="">
+                            <button type="submit" class="btn" onclick="checkValidate()">Register</button>
                         </form>
                       </div>
                   </div>
